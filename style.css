@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+
+.wrapper {
+  width: 260px;
+  height: 520px;
+  background-color: aqua;
+  margin: 0 auto;
+  position: relative;
+}
+.inner {
+  display: flex;
+  margin-bottom: 1px;
+}
+.inner__block {
+  height: 25px;
+  padding: 2px;
+  background-color: blue;
+  width: 25px;
+  border: 2px solid black;
+}
+.inner__block + .inner__block {
+  margin-left: 1px;
+}
+
+.square {
+  position: absolute;
+  top: 0px;
+  left: 104px;
+  bottom: 0px;
+}
+.square__block {
+  position: absolute;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  margin-bottom: 1px;
+}
+
+.square__block1 {
+  top: 26px;
+}
+.square__block2 {
+  top: 26px;
+  left: 26px;
+}
+.square__block3 {
+  top: 0px;
+  left: 26px;
+}
+.square__block4 {
+  top: 0px;
+}
